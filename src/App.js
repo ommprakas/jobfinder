@@ -9,7 +9,6 @@ import {
   MenuItem,
   InputAdornment,
   Card,
-  CardContent,
   IconButton
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
@@ -35,42 +34,6 @@ import happy from "./happy.png";
 import mindtree from "./mindtree.png"; 
 import logo1 from "./logo1.png";
 
-
-
-function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleLogin = () => {
-    // Call your API to login user
-    console.log("Login button clicked");
-  };
-
-  return (
-    <Box sx={{ padding: "40px 20px", textAlign: "center" }}>
-      <Typography variant="h4" gutterBottom>
-        Login
-      </Typography>
-      <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "20px", flexWrap: "wrap", marginTop: "30px" }}>
-        <Box sx={{ width: "300px", padding: "20px", borderRadius: "15px", backgroundColor: "#e8f5e9" }}>
-          <Typography variant="h6" gutterBottom>
-            Email
-          </Typography>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        </Box>
-        <Box sx={{ width: "300px", padding: "20px", borderRadius: "15px", backgroundColor: "#e8f5e9" }}>
-          <Typography variant="h6" gutterBottom>
-            Password
-          </Typography>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </Box>
-        <Button variant="contained" color="primary" onClick={handleLogin}>
-          Login
-        </Button>
-      </Box>
-    </Box>
-  );
-}
   function App() {
     const [jobType, setJobType] = useState("");
     const [location, setLocation] = useState("");
